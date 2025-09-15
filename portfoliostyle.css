@@ -1,0 +1,193 @@
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(89, 117, 141);
+    box-shadow: rgb(14, 12, 29) 0px 20px 30px -10px;
+    }
+
+.navbar-links {
+    display: flex;
+    column-gap: 25px;
+}
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.navbar h1{
+    
+    font-size: 35px;
+    color: black;
+    padding-left:5px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-links a:hover{
+    color: aliceblue;
+    text-decoration: 1px solid underline;
+}
+.navbar h1:hover{
+    color: aliceblue;
+    text-decoration: 1px solid underline;
+}
+.hero{
+    background-color: rgb(174, 196, 215);
+    min-height: 80vh;
+    display: flex;
+}
+
+.hero h1{
+    max-width: 60%;
+    flex: 3;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 31px;
+}
+
+
+
+.project{
+    background-color: rgb(191, 214, 190);
+    margin: 0;
+    min-height: 130vh;
+
+}
+.project h1{
+text-align: center;
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+text-decoration: 2px solid black underline;
+
+}
+.project ul,li{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    list-style: none;
+
+}
+
+.contact{
+    min-height: 70vh;
+    background-color: rgb(223, 223, 222);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: 1px solid black underline;
+}
+.contact form{
+    font-size: 25px;
+    padding-left: 35%;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact input{
+    padding: 7px;
+    margin-left: 28px;
+    border: 2px black solid;
+}
+.contact textarea{
+    padding: 30px;
+    border: 2px black solid;
+
+}
+.contact form h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: rgb(12, 154, 243);
+    color: white;
+    padding: 10px;
+    width: 80px;
+    margin-left: 45%;
+
+}
+button:hover{
+    background-color: rgb(75, 75, 235);
+}
+/* Responsive for phones */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .navbar h1 {
+        font-size: 25px;
+        padding: 5px 0;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        column-gap: 0;
+        row-gap: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar-links a {
+        font-size: 16px;
+        color: black;
+        width: 100%;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        flex: none;
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .project {
+        min-height: auto;
+        padding: 20px 10px;
+    }
+
+    .project h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .project ul, .project li {
+        font-size: 20px;
+        padding-left: 0;
+    }
+
+    .contact {
+        min-height: auto;
+        padding: 20px 10px;
+    }
+
+    .contact form {
+        padding-left: 0;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    button {
+        width: 50%;
+        margin-left: 0;
+    }
+}
