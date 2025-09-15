@@ -109,7 +109,9 @@ button{
 button:hover{
     background-color: rgb(75, 75, 235);
 }
-/* Responsive for phones */
+
+
+
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -191,3 +193,4 @@ button:hover{
         margin-left: 0;
     }
 }
+
