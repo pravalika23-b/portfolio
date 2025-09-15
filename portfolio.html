@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='portfoliostyle.css'>
+    <script src='finaljavascript.js'></script>
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<head>  
+    <title> Portfolio Website </title>
+</head>
+
+<body>
+  <nav class="navbar">
+
+    <h1>Portfolio
+    </h1>
+    <div class="navbar-links">    
+        <p> <a href="">HOME</a></p>
+        <p> <a href="">ABOUT </a></p>
+        <p> <a href="">PROJECTS</a></p>
+        <p> <a href="">CONTACT</a></p>
+    
+    </div> 
+</nav>
+
+<div id= "home" class="hero">
+  <h1>
+    Hello, This is <br><br>
+    PRAVALIKA B. <br><br>
+    ABOUT: <br>
+    Iam a Front End Web Developer. Currently doing an Internship In GRAFIXUI.
+    I have good knowledge in HTML, CSS, JavaScript and worked in real life Projects.
+  </h1>
+  <img src="c:\Users\hp\Desktop\Grafix UI\istockphoto-1705503967-612x612.jpg">
+</div>
+
+<div id="projects" class="project">
+  <h1>
+    <br>
+    PROJECTS:
+  </h1>
+  <ul>
+    <li>1. Responsive Calculator</li>
+    <li>Description for the project :
+      <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ex vero repudiandae asperiores quod maxime error quaerat voluptatem minus dolor! Pariatur illo </li>
+    <li>2. Personal Portfolio</li>
+    <li>Description for the project :
+      <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ex vero repudiandae asperiores quod maxime error quaerat voluptatem minus dolor! Pariatur illo </li>
+    <li>3. Landing page</li>
+    <li>Description for the project :
+      <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ex vero repudiandae asperiores quod maxime error quaerat voluptatem minus dolor! Pariatur illo </li>
+    <li>4. E-Commerce Website</li>
+    <li>Description for the project :
+      <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ex vero repudiandae asperiores quod maxime error quaerat voluptatem minus dolor! Pariatur illo </li>
+  </ul>
+
+</div>
+
+<div class="contact" id="contacts">
+   
+  <form>
+    <br>
+    
+    <br>    
+    <label>Name:</label>
+    <input type="text" required / placeholder="Enter Your Name"><br /><br />
+
+    <label>Email:</label>
+    <input type="email"required / placeholder="Enter your Email id"><br /><br />
+
+    <label>Message:</label>
+    <textarea id="message" required/ placeholder="Enter your message"></textarea><br /><br />
+
+  </form>
+<button>Submit</button>
+</div>
+
+<body>
+  <nav class="navbar" id="footer">
+
+    <h1>Call or Text
+    </h1>
+    <div class="navbar-links"> 
+        <h1></h1>   
+        <p> <a href="">pravali2312@gmail.com</a></p>
+        <p> <a href="">987654321</a></p>
+        <p> <a href="">pravalika.linkedin</a></p>
+        
+    
+    </div> 
+</nav>
+
+</body>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('a[href^="#home"]');
+
+  for (let link of links) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: "smooth"
+        });
+      }
+    });
+  }
+});
+
+
+
+
+
+</script>
